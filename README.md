@@ -13,7 +13,7 @@ The dataset contains information about various vehicles, including mileage, make
 1. **Data Processing**
     - Distribution analyses revealed right-skewed distributions in `mileage` and `price`, as shown in the plots below:
       - ![Mileage Distribution](Plots/Distribution of mileage.PNG)
-      - ![Price Distribution](Plots/Price Distribution_Bar.PNG)
+      - ![Price Distribution](Plots/Price_Distribution_Bar.PNG)
     - Outliers were identified and removed based on quantiles to improve data quality.
     - Categorical encoding and target encoding were applied to handle high-dimensional categories efficiently.
       
