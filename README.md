@@ -12,8 +12,8 @@ The dataset contains information about various vehicles, including mileage, make
 ### Key Stages and Findings
 1. **Data Processing**
     - Distribution analyses revealed right-skewed distributions in `mileage` and `price`, as shown in the plots below:
-      - ![Mileage Distribution](visuals/mileage_distribution.png)
-      - ![Price Distribution](visuals/price_distribution.png)
+      - ![Mileage Distribution](Plots/Distribution of mileage.PNG)
+      - ![Price Distribution](Plots/Price Distribution_Bar.PNG)
     - Outliers were identified and removed based on quantiles to improve data quality.
     - Categorical encoding and target encoding were applied to handle high-dimensional categories efficiently.
       
@@ -23,7 +23,7 @@ The dataset contains information about various vehicles, including mileage, make
 
   3. **Feature Selection and Dimensionality Reduction**
     - Domain knowledge and a heat map were used to identify core features with the highest correlations to price:
-      - ![Correlation Heatmap](visuals/feature_correlation_heatmap.png)
+      - ![Correlation Heatmap](Plots/Correlation Heatmap.PNG)
     - Automated feature selection (K-Best and RFECV) further refined the feature set:
       - ![K-Best and RFECV Selected Features](visuals/k_best_rfecv_features.png)
 
@@ -34,5 +34,5 @@ The dataset contains information about various vehicles, including mileage, make
 
 5. **Explainability with SHAP**
     - SHAP analysis revealed the impact of features like `standard_model`, `mileage_age_of_vehicle`, and `standard_make` on the model’s predictions:
-      - ![SHAP Feature Importance](visuals/shap_feature_importance.png)
+      - ![SHAP Feature Importance](Plots/Shap3.PNG)
     - These features had complex, varied impacts on price, informing insights useful for targeted marketing, inventory management, and customer education.
